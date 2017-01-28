@@ -1,2 +1,1 @@
-# benoitlamothe.github.io
-evvnt website
+# EventlyWebsite
