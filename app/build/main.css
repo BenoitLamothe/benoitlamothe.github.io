@@ -35615,7 +35615,6 @@ page-home .remove-date {
 }
 
 page-home .remove-date.icon-ios {
-  top: 28px;
   font-size: 36px;
 }
 
@@ -35658,6 +35657,15 @@ page-schedule ion-card span {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+page-schedule .hidden {
+  display: none;
+}
+
+page-schedule .regenerate-button {
+  float: right;
+  margin-right: 17px;
 }
 
 page-schedule .time-container {
@@ -35704,7 +35712,12 @@ page-schedule ion-item.date .item-inner {
 }
 
 page-schedule .category-container {
-  height: 10px;
+  height: 30px;
+  color: white;
+}
+
+page-schedule .category-container ion-col {
+  padding: 2px;
 }
 
 page-schedule .vertical-line {
@@ -35728,6 +35741,26 @@ page-schedule #map {
   width: 100%;
 }
 
+page-schedule-settings .comedy, page-schedule-settings .theater {
+  background-color: #0F6177;
+}
+
+page-schedule-settings .activities, page-schedule-settings .family {
+  background-color: #0B8389;
+}
+
+page-schedule-settings .shows, page-schedule-settings .music {
+  background-color: #1BA39C;
+}
+
+page-schedule-settings .sport, page-schedule-settings .other {
+  background-color: #1BBC9B;
+}
+
+page-schedule-settings .culture, page-schedule-settings .business {
+  background-color: #16A086;
+}
+
 page-schedule-settings .button-toggle {
   height: 100px;
   width: 100%;
@@ -35735,15 +35768,40 @@ page-schedule-settings .button-toggle {
   color: grey;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
   opacity: 0.5;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 100px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   cursor: pointer;
+}
+
+page-schedule-settings .button-toggle .center {
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  color: gray;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  white-space: normal;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
 }
 
 page-schedule-settings .button-toggle.time .icon {
   font-size: 3.2em;
-  line-height: 100px;
 }
 
 page-schedule-settings .button-toggle.checked {
