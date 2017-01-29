@@ -35387,8 +35387,9 @@ sub {
   top: -5px;
 }
 
-ion-navbar {
-  padding-top: 34px !important;
+.bar-button-default-ios {
+  color: #fff !important;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .scroll-content {
@@ -35611,7 +35612,7 @@ page-home .no-data {
 
 page-home .remove-date {
   position: absolute;
-  top: 38px;
+  top: 29px;
   right: 20px;
   font-size: 25px;
   color: white;
@@ -35655,6 +35656,13 @@ page-my-schedules .event-card .card-content h2, page-my-schedules .event-card .c
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+page-my-schedules .no-data {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 page-schedule ion-card span {
