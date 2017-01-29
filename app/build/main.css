@@ -35387,6 +35387,10 @@ sub {
   top: -5px;
 }
 
+ion-navbar {
+  padding-top: 34px !important;
+}
+
 .scroll-content {
   background: linear-gradient(to top, #9eb2c1, #ced6de);
 }
@@ -35607,7 +35611,7 @@ page-home .no-data {
 
 page-home .remove-date {
   position: absolute;
-  top: 15px;
+  top: 38px;
   right: 20px;
   font-size: 25px;
   color: white;
